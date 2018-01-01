@@ -70,8 +70,6 @@ d3.csv("mir-drug-gene.csv", function(error, links) {
 
   // Extract the array of nodes from the map by name.
   var nodes = d3.values(nodesByName);
-    
-  d3.select(window).on("resize", resize);
 
   // Create the link lines.
   var link = svg.selectAll(".link")
