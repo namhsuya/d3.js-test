@@ -44,6 +44,7 @@ line.link {
 	
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script type="text/javascript" src="./fisheye.js"> </script>
+<script src="https://gist.github.com/soykje/ec2fc326830355104c89cd50bf1fa192.js"></script>
 <script>
 
 var width = 1280,
@@ -60,17 +61,11 @@ var colors = ['#ec6344', '#4281A4'];
 var color = d3.scale.ordinal()
               .range(colors);
 
-//var svg = d3.select("body").append("svg")
-//    .attr("width", width)
-//    .attr("height", height);
-var svg = d3.select("body").append("div")
-   .classed("svg-container", true) //container class to make it responsive
-   .append("svg")
-   //responsive SVG needs these 2 attributes and no width and height attr
-   .attr("preserveAspectRatio", "xMinYMin meet")
-   .attr("viewBox", "0 0 600 400")
-   //class to make it responsive
-   .classed("svg-content-responsive", true);
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .call(responsivefy);
+
 	
 var fisheye = d3.fisheye.circular()
 				.radius(90)
@@ -170,9 +165,7 @@ d3.csv("mir-drug-gene.csv", function(error, links) {
     });
 
   d3.select('#path').on('click', () => {
-      force.stop();
       svg.on("mousemove", function() {
-        force.stop();
         var mouse = d3.mouse(this);
         fisheye.focus(mouse);
 
