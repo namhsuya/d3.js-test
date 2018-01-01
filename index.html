@@ -22,7 +22,6 @@ line.link {
 </style>
 <body>
 <div class="somediv" align="center">
-  Hold and drag to pan and mousewheel to zoom &nbsp;
   Fisheye Lens: &nbsp;
   <input type='radio' name='wot' id='circle' value='one' checked />OFF
   <input type='radio' name='wot' id='path' value='two'  />ON
@@ -48,11 +47,7 @@ var color = d3.scale.ordinal()
 
 var svg = d3.select("body").append("svg")
     .attr("width", width)
-    .attr("height", height)
-    .call(d3.behavior.zoom().on("zoom", function () {
-        svg.attr("transform", "translate(" + d3.event.translate + ")")
-      }))
-    .append("g");
+    .attr("height", height);
 
 var fisheye = d3.fisheye.circular()
 				.radius(90)
