@@ -20,20 +20,6 @@ line.link {
   text-anchor: middle;
 }
 
-.svg-container {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    padding-bottom: 100%; /* aspect ratio */
-    vertical-align: top;
-    overflow: hidden;
-}
-.svg-content-responsive {
-    display: inline-block;
-    position: absolute;
-    top: 10px;
-    left: 0;
-}
 </style>
 <body>
 <div class="somediv" align="center">
@@ -44,7 +30,7 @@ line.link {
 	
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script type="text/javascript" src="./fisheye.js"> </script>
-<script src="https://gist.github.com/soykje/ec2fc326830355104c89cd50bf1fa192.js"></script>
+<script type="text/javascript" src="./responsivefy.js"> </script>
 <script>
 
 var width = 1280,
