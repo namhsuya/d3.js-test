@@ -19,6 +19,21 @@ line.link {
   fill: #1a0f0f;
   text-anchor: middle;
 }
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* aspect ratio */
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
 </style>
 <body>
 <div class="somediv" align="center">
@@ -45,10 +60,18 @@ var colors = ['#ec6344', '#4281A4'];
 var color = d3.scale.ordinal()
               .range(colors);
 
-var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
-
+//var svg = d3.select("body").append("svg")
+//    .attr("width", width)
+//    .attr("height", height);
+var svg = d3.select("body")..append("div")
+   .classed("svg-container", true) //container class to make it responsive
+   .append("svg")
+   //responsive SVG needs these 2 attributes and no width and height attr
+   .attr("preserveAspectRatio", "xMinYMin meet")
+   .attr("viewBox", "0 0 600 400")
+   //class to make it responsive
+   .classed("svg-content-responsive", true);
+	
 var fisheye = d3.fisheye.circular()
 				.radius(90)
 				.distortion(4);
