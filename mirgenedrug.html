@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+line.link {
+  fill: none;
+  stroke: #e0e0e0;
+  stroke-width: 1px;
+}
+
+.node circle {
+  cursor: pointer;
+  stroke-width: 0.5px;
+}
+
+.node text {
+  font: 4px sans-serif;
+  pointer-events: none;
+  fill: #1a0f0f;
+  text-anchor: middle;
+}
+</style>
+<body>
+<div class="somediv" align="center">
+  Fisheye Lens: &nbsp;
+  <input type='radio' name='wot' id='circle' value='one' checked />OFF
+  <input type='radio' name='wot' id='path' value='two'  />ON
+</div>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" src="./fisheye.js"> </script>
+<script>
+
+var width = 900,
+    height = 900;
+
+var force = d3.layout.force()
+    .linkDistance(10)
+    .charge(-200)
+    .gravity(0.3)
+    .size([width, height]);
+
+//var color = d3.scale.category20();
+var colors = ['#ec6344', '#4281A4'];
+var color = d3.scale.ordinal()
+              .range(colors);
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .call(d3.behavior.zoom().on("zoom", function () {
+        svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
+      }))
+    .append("g");
+
+var fisheye = d3.fisheye.circular()
+				.radius(90)
+				.distortion(4);
+
+d3.csv("mir-drug-gene.csv", function(error, links) {
+  if (error) throw error;
+
+  var nodesByName = {};
+
+  // Create nodes for each unique source and target.
+  links.forEach(function(link) {
+    link.source = nodeByName(link.source);
+    link.target = nodeByName(link.target);
+  });
+
+  // Extract the array of nodes from the map by name.
+  var nodes = d3.values(nodesByName);
+    
+  d3.select(window).on("resize", resize);
+
+  // Create the link lines.
+  var link = svg.selectAll(".link")
+      .data(links)
+      .enter().append("line")
+      .attr("class", "link");
+
+  // Create the node circles.
+  var node = svg.selectAll(".node")
+      .data(nodes)
+      .enter().append("g")
+      .attr("class", "node")
+      //.attr("click", click)
+      .call(force.drag);
+    
+  resize();
+
+  // add circles to drag
+  node.append("circle")
+      .attr("r", function(d) { return Math.sqrt(d.size) / 10 || 4.5; })
+      .attr("class", function(d) { return "node " + d.group; })
+      .call(force.drag);
+
+  // add the text
+  node.append("text")
+    .attr("x", 12)
+    .attr("dy", ".35em")
+    .attr("text-anchor", "middle")
+    .text(function(d) { return d.name; });
+
+  // add te color to circle
+  node.select("circle")
+      //.style("fill", color);
+      //.style("fill", function(d) { return color(d.group); })
+      .style("fill", function(d, i) { if(i%2==0) { return color(0) } else { return color(1) } });
+
+  // Start the force layout.
+  force
+      .nodes(nodes)
+      .links(links)
+      .on("tick", tick)
+      .start();
+
+  function tick() {
+    link.attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+
+    node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+  }
+
+
+
+  function resize() {
+      width = window.innerWidth, height = window.innerHeight;
+      svg.attr("width", width).attr("height", height);
+      force.size([width, height]).resume();
+  }
+
+  function nodeByName(name) {
+    return nodesByName[name] || (nodesByName[name] = {name: name});
+  }
+
+  d3.select('#circle').on('click', () => {
+
+    force.start();
+    fisheye = 0;
+    svg.on("mousemove", function() {
+    link.attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+
+    node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+  });
+    });
+
+  d3.select('#path').on('click', () => {
+      force.stop();
+      svg.on("mousemove", function() {
+        force.stop();
+        var mouse = d3.mouse(this);
+        fisheye.focus(mouse);
+
+        node.attr("transform", function(d) { var fe = fisheye(d); return "translate(" + fe.x + "," + fe.y + ")" + "scale(" + fe.z + ")"; });
+      });
+    });
+
+});
+
+</script>
