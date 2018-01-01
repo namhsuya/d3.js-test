@@ -87,7 +87,7 @@ d3.csv("mir-drug-gene.csv", function(error, links) {
       //.attr("click", click)
       .call(force.drag);
     
-  resize();
+
 
   // add circles to drag
   node.append("circle")
@@ -124,14 +124,6 @@ d3.csv("mir-drug-gene.csv", function(error, links) {
     node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
   }
 
-
-
-  function resize() {
-      width = window.innerWidth, height = window.innerHeight;
-      svg.attr("width", width).attr("height", height);
-      force.size([width, height]).resume();
-  }
-
   function nodeByName(name) {
     return nodesByName[name] || (nodesByName[name] = {name: name});
   }
@@ -139,20 +131,22 @@ d3.csv("mir-drug-gene.csv", function(error, links) {
   d3.select('#circle').on('click', () => {
 
     force.start();
-    fisheye = 0;
-    svg.on("mousemove", function() {
-    link.attr("x1", function(d) { return d.source.x; })
-        .attr("y1", function(d) { return d.source.y; })
-        .attr("x2", function(d) { return d.target.x; })
-        .attr("y2", function(d) { return d.target.y; });
+  
+	  svg.on("mousemove", function() {
+    		link.attr("x1", function(d) { return d.source.x; })
+        	.attr("y1", function(d) { return d.source.y; })
+        	.attr("x2", function(d) { return d.target.x; })
+        	.attr("y2", function(d) { return d.target.y; });
 
-    node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
-  });
+    		node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+  	});
     });
 
   d3.select('#path').on('click', () => {
       svg.on("mousemove", function() {
         var mouse = d3.mouse(this);
+	console.log("ON Clicked"+fisheye);
+	console.log("ON Clicked"+d3.mouse(this));
         fisheye.focus(mouse);
 
         node.attr("transform", function(d) { var fe = fisheye(d); return "translate(" + fe.x + "," + fe.y + ")" + "scale(" + fe.z + ")"; });
