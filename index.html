@@ -55,7 +55,7 @@ var svg = d3.select("body").append("svg")
 	
 var fisheye = d3.fisheye.circular()
 				.radius(90)
-				.distortion(4);
+				.distortion(7);
 
 d3.csv("mir-drug-gene.csv", function(error, links) {
   if (error) throw error;
