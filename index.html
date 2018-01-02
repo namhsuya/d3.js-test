@@ -79,21 +79,30 @@ d3.csv("mir-drug-gene.csv", function(error, links) {
       .attr("class", "link");
 
   // Create the node circles.
-  var node = svg.selectAll(".node")
-      .data(nodes)
-      .enter().append("g")
-      .attr("class", "node")
+  //var node = svg.selectAll(".node")
+  //    .data(nodes)
+  //    .enter().append("g")
+  //    .attr("class", "node")
       //.attr("click", click)
+  //     .call(force.drag);
+
+  // new-tocheck	
+  var node = svg.selectAll("circle")
+      .data(graph.nodes)
+      .enter().append("circle")
+      .attr("r", radius - .75)
+      //.style("fill", function(d) { return fill(d.group); })
+      //.style("stroke", function(d) { return d3.rgb(fill(d.group)).darker(); })
       .call(force.drag);
     
 
 
   // add circles to drag
-  node.append("circle")
-      .attr("r", function(d) { return Math.sqrt(d.size) / 10 || 4.5; })
-      //.attr("r", radius - .75)
-      .attr("class", function(d) { return "node " + d.group; })
-      .call(force.drag);
+  //node.append("circle")
+  //    .attr("r", function(d) { return Math.sqrt(d.size) / 10 || 4.5; })
+  //    //.attr("r", radius - .75)
+  //    .attr("class", function(d) { return "node " + d.group; })
+  //    .call(force.drag);
 
   // add the text
   node.append("text")
