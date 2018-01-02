@@ -90,7 +90,8 @@ d3.csv("mir-drug-gene.csv", function(error, links) {
 
   // add circles to drag
   node.append("circle")
-      .attr("r", function(d) { return Math.sqrt(d.size) / 10 || 4.5; })
+      //.attr("r", function(d) { return Math.sqrt(d.size) / 10 || 4.5; })
+      .attr("r", radius - .75)
       .attr("class", function(d) { return "node " + d.group; })
       .call(force.drag);
 
