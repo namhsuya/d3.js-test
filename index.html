@@ -169,7 +169,7 @@ d3.csv("mir-drug-gene.csv", function(error, links) {
     return nodesByName[name] || (nodesByName[name] = {name: name});
   }
 
-  d3.select('#circle').on('click', () => {
+  d3.select('#radio01').on('click', () => {
 
     force.start();
   
@@ -183,7 +183,7 @@ d3.csv("mir-drug-gene.csv", function(error, links) {
   	});
     });
 
-  d3.select('#path').on('click', () => {
+  d3.select('#radio02').on('click', () => {
       svg.on("mousemove", function() {
         var mouse = d3.mouse(this);
         fisheye.focus(mouse);
