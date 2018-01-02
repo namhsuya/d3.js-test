@@ -88,7 +88,7 @@ d3.csv("mir-drug-gene.csv", function(error, links) {
 
   // new-tocheck	
   var node = svg.selectAll("circle")
-      .data(graph.nodes)
+      .data(nodes)
       .enter().append("circle")
       .attr("r", radius - .75)
       //.style("fill", function(d) { return fill(d.group); })
