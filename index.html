@@ -121,8 +121,8 @@ d3.csv("mir-drug-gene.csv", function(error, links) {
 	  
 
     node.attr("cx", function(d) { return d.x = Math.max(radius, Math.min(width - radius, d.x)); })
-        .attr("cy", function(d) { return d.y = Math.max(radius, Math.min(height - radius, d.y)); })
-    	.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+        .attr("cy", function(d) { return d.y = Math.max(radius, Math.min(height - radius, d.y)); });
+    	//.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
   }
 
   function nodeByName(name) {
