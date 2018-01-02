@@ -22,10 +22,52 @@ line.link {
 
 </style>
 <body>
-<div class="somediv" align="center">
-  Fisheye Lens: &nbsp;
-  <input type='radio' name='wot' id='circle' value='one' checked />OFF
-  <input type='radio' name='wot' id='path' value='two'  />ON
+<div align="center">
+  <style>
+div {
+  margin:0 0 0.75em 0;
+}
+
+input[type="radio"] {
+    display:none;
+}
+input[type="radio"] + label {
+    color: #292321;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+}
+input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+}
+
+input[type="radio"] + label span {
+     background-color:#DDE1E1;
+}
+
+input[type="radio"]:checked + label span{
+     background-color:#403F4C;
+}
+
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+  -webkit-transition:background-color 0.4s linear;
+  -o-transition:background-color 0.4s linear;
+  -moz-transition:background-color 0.4s linear;
+  transition:background-color 0.4s linear;
+}
+    </style>
+  <b><label>Fisheye Lens: &nbsp;</label>
+  <input type="radio" id="radio01" name="radio" checked/>
+  <label for="radio01"><span></span>OFF</label>
+  <input type="radio" id="radio02" name="radio" />
+  <label for="radio02"><span></span>ON</label></b>
 </div>
 	
 <script src="https://d3js.org/d3.v3.min.js"></script>
