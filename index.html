@@ -90,8 +90,8 @@ d3.csv("mir-drug-gene.csv", function(error, links) {
 
   // add circles to drag
   node.append("circle")
-      //.attr("r", function(d) { return Math.sqrt(d.size) / 10 || 4.5; })
-      .attr("r", radius - .75)
+      .attr("r", function(d) { return Math.sqrt(d.size) / 10 || 4.5; })
+      //.attr("r", radius - .75)
       .attr("class", function(d) { return "node " + d.group; })
       .call(force.drag);
 
@@ -121,10 +121,9 @@ d3.csv("mir-drug-gene.csv", function(error, links) {
         .attr("x2", function(d) { return d.target.x; })
         .attr("y2", function(d) { return d.target.y; });
 	  
-
-    node.attr("cx", function(d) { return d.x = Math.max(radius, Math.min(width - radius, d.x)); })
-        .attr("cy", function(d) { return d.y = Math.max(radius, Math.min(height - radius, d.y)); });
-    	//.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+	//.attr("cx", function(d) { return d.x = Math.max(radius, Math.min(width - radius, d.x)); })
+        //.attr("cy", function(d) { return d.y = Math.max(radius, Math.min(height - radius, d.y)); });
+    	node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
   }
 
   function nodeByName(name) {
