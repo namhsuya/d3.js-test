@@ -37,9 +37,10 @@ var width = 1100,
     height = 720;
 
 var force = d3.layout.force()
-    .linkDistance(1)
-    .charge(-80)
+    .linkDistance(200)
+    .charge(-120)
     .gravity(0.1)
+    .linkStrength(20)
     .size([width, height]);
 
 //var color = d3.scale.category20();
