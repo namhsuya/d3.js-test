@@ -145,7 +145,8 @@ d3.csv("mir-drug-gene.csv", function(error, links) {
   node.select("circle")
       //.style("fill", color);
       //.style("fill", function(d) { return color(d.group); })
-      .style("fill", function(d, i) { if(i%2==0) { return color(0) } else { return color(1) } });
+      //.style("fill", function(d, i) { if(i%2==0) { return color(0) } else { return color(1) } });
+	.style("fill", function(d, i) { if(i%2==0) { return console.log(d) } else { return console.log(i) } });
 
   // Start the force layout.
   force
