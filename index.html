@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+line.link {
+  fill: none;
+  stroke: #e0e0e0;
+  stroke-width: 1px;
+}
+
+.node circle {
+  cursor: pointer;
+  stroke-width: 0.5px;
+}
+
+.node text {
+  font: 4px sans-serif;
+  pointer-events: none;
+  fill: #1a0f0f;
+  text-anchor: middle;
+}
+
+</style>
+<body>
+
+<script type="text/javascript" src="d3.v3.min.js"></script>
+<script type="text/javascript" src="./fisheye.js"> </script>
+<script type="text/javascript" src="./responsivefy.js"> </script>
+<script>
+
+var width = 700,
+    height = 700;
+
+var force = d3.layout.force()
+    .charge(-120)
+    .gravity(0.5)
+    .linkDistance(100)
+    .size([width, height]);
+
+//var color = d3.scale.category20();
+var colors = ['#D62246', '#527B3B', '#094D92', '#FDE74C'];
+var color = d3.scale.ordinal()
+              .range(colors);
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .call(responsivefy)
+    .call(d3.behavior.zoom().on("zoom", function () {
+        svg.attr("transform", "translate(" + d3.event.translate + ")" + " scale(" + d3.event.scale + ")")
+    }))
+    .append("g");
+
+
+var fisheye = d3.fisheye.circular()
+				.radius(90)
+				.distortion(7);
+
+d3.csv("temp.csv", function(error, links) {
+  if (error) throw error;
+
+  var nodesByName = {};
+
+  // Create nodes for each unique source and target.
+  links.forEach(function(link) {
+    link.source = nodeByName(link.source);
+    link.target = nodeByName(link.target);
+  });
+
+  // Extract the array of nodes from the map by name.
+  var nodes = d3.values(nodesByName);
+
+  // Create the link lines.
+  var link = svg.selectAll(".link")
+      .data(links)
+      .enter().append("line")
+      .attr("class", "link");
+
+  // Create the node circles.
+  var node = svg.selectAll(".node")
+      .data(nodes)
+      .enter().append("g")
+      .attr("class", "node")
+      //.attr("click", click)
+      .call(force.drag);
+
+  // add circles to drag
+  node.append("circle")
+      .attr("r", function(d) { return Math.sqrt(d.size) / 10 || 6; })
+      //.attr("r", radius - .75)
+      .attr("class", function(d) { return "node " + d.group; })
+      .call(force.drag);
+
+  // add the text
+  node.append("text")
+    .attr("x", 12)
+    .attr("dy", ".35em")
+    .attr("text-anchor", "middle")
+    .text(function(d) { return d.name; });
+
+  // add te color to circle
+  node.select("circle")
+      //.style("fill", function(d, i) { if(i%2==0) { return color(0) } else { return color(1) } });
+    .style("fill", function(d, i) {
+        if(d.name[0] == d.name[0].toUpperCase() && d.name[1] == d.name[1].toUpperCase()){
+          return colors[0]
+        } else if((d.name[0] == d.name[0].toUpperCase() && d.name[d.name.length-1] == d.name[d.name.length-1].toLowerCase() || d.name.startsWith("Hepatitis"))){
+          return colors[3]
+          //console.log(colors[3], d.name, "Disease")
+        } else if(d.name.startsWith("hsa") || d.name.startsWith("mir") || d.name.startsWith("miR") || d.name.startsWith("let")){
+          //console.log(colors([1], d.name)
+          return colors[1]
+        } else if(d.name.startsWith("5") || ((d.name[0] == d.name[0].toLowerCase()) && (d.name[1] == d.name[1].toLowerCase())) ){
+          //console.log(colors[2], d.name)
+          return colors[2]
+        }
+  });
+
+
+  // Start the force layout.
+  force
+      .nodes(nodes)
+      .links(links)
+      .on("tick", tick)
+      .start();
+
+  function tick() {
+    link.attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+
+	//.attr("cx", function(d) { return d.x = Math.max(radius, Math.min(width - radius, d.x)); })
+        //.attr("cy", function(d) { return d.y = Math.max(radius, Math.min(height - radius, d.y)); });
+    	node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+  }
+
+  function nodeByName(name) {
+    return nodesByName[name] || (nodesByName[name] = {name: name});
+  }
+
+});
+
+	</script>
