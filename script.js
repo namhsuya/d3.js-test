@@ -110,6 +110,12 @@ window.onload = function(){
 		consumeDisruptiveKeyEvents(event);
 
 	});
+	
+	document.getElementById("writingPad").addEventListener('keypress',function(event){
+		
+		console.log(event.keyCode);
+
+	});
 
 	document.getElementById("writingPad").addEventListener('contextmenu', function(event){
 
