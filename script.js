@@ -12,6 +12,8 @@ function setFocusToSection(event){
 function consumeDisruptiveKeyEvents(event){
 
 	var kCode = event.keyCode;
+	
+	console.log(kCode);
 
 	if(kCode == 8){
 		event.preventDefault();
@@ -103,7 +105,7 @@ window.onload = function(){
 	});
 
 	document.getElementById("writingPad").addEventListener('keydown',function(event){
-
+		
 		countWords();
 		consumeDisruptiveKeyEvents(event);
 
