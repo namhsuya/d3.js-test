@@ -105,7 +105,7 @@ window.onload = function(){
 	document.getElementById("writingPad").addEventListener('keydown',function(event){
 	
 		
-		if(even.keyCode == 8){
+		if(event.keyCode == 8){
 			console.log(event.keyCode);
 		} else {
 			console.log("NOPE!");
