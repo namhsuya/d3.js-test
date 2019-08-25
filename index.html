@@ -38,10 +38,10 @@
 <script>
 
 
-document.onkeypress = function (e) {
-    e = e || window.event;
-    console.log(e.keyDown);
-};			
+document.addEventListener('keydown', logKey);
+function logKey(e) {
+  log.textContent += ` ${e.code}`;
+}			
 
 
 var color = d3.scaleOrdinal(d3.schemeSet3);
