@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Prata&display=swap');
+
+body{
+
+	background: black;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+
+#wordCount{
+
+	position: fixed;
+	top: 23px;
+	right: 50px;
+
+}
+
+#save{
+
+	position: fixed;
+	background: black;
+	border-color: white;
+	border-radius: 15px;
+	padding: 6px;
+	font-family: 'Montserrat', sans-serif; 
+	color: white;
+	top: 25px;
+	left: 50px;
+
+}
+	
+
+header{
+
+	position: static;
+    margin: 20px 200px 30px 200px;
+	outline: none;
+	font-family: 'Playfair Display', serif;
+	font-size: 45px;
+	font-weight: bold;
+}
+
+section{
+
+	position: relative;
+	margin: 10px 200px;
+	outline: none;
+	flex-wrap: wrap;
+	font-family: 'Prata', serif;
+	font-size: 22px;
+
+	
+}
+
+.unselectable{
+
+	user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+
+}
+
+
