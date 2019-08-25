@@ -38,7 +38,10 @@
 <script>
 
 
-			
+document.onkeypress = function (e) {
+    e = e || window.event;
+    console.log(e.keyCode);
+};			
 
 
 var color = d3.scaleOrdinal(d3.schemeSet3);
