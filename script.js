@@ -12,8 +12,6 @@ function setFocusToSection(event){
 function consumeDisruptiveKeyEvents(event){
 
 	var kCode = event.keyCode;
-	
-	console.log(kCode);
 
 	if(kCode == 8){
 		event.preventDefault();
