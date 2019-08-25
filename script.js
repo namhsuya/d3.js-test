@@ -103,15 +103,15 @@ window.onload = function(){
 	});
 
 	document.getElementById("writingPad").addEventListener('keydown',function(event){
+	
 		
+		if(even.keyCode == 8){
+			console.log(event.keyCode);
+		} else {
+			console.log("NOPE!");
+		}
 		countWords();
 		consumeDisruptiveKeyEvents(event);
-
-	});
-	
-	document.getElementById("writingPad").addEventListener('keypress',function(event){
-		
-		console.log(event.keyCode);
 
 	});
 
