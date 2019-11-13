@@ -1,0 +1,994 @@
+[
+  {
+    "node": "Breast cancer",
+    "edge": "BCAR4"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "BCYRN1"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "CCAT2"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "CDKN2B-AS1"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "DSCAM-AS1"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "GAS5"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "H19"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "HOTAIR"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "LSINCT5"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "MALAT1"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "MEG3"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "MIR31HG"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "Pinc"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "PVT1"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "XIST"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "ZFAS1"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "LINC-ROR"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "TUG1"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "UCA1"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "MIR2052HG"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "DANCR"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "LINC00520"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "CYTOR"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "AC145110.1"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "NEAT1"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "LINC01089"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "RMST"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "LINC01234"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "STXBP5-AS1"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "LINP1"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "EPB41L4A-AS2"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "NORAD"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "LINC00636"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "LINC01405"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "ADARB2-AS1"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "ST8SIA6-AS1"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "LINC00511"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "DPP10-AS1"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "PANDAR"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "HIF1A-AS2"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "RP11-434D9.1"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "LINC00052"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "FGF14-AS2"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "LINC00472"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "CCAT1"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "LINC01016"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "LINC00160"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "SOX2-OT"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "PTPRG-AS1"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "RASSF1-AS1"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "NBAT1"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "KCNQ1OT1"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "TUNAR"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "EGOT"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "LINC00993"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "RP11-445H22.4"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "NKILA"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "SPRY4-IT1"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "RP4-583P15.10"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "IRAIN"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "DIRC3"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "CCDC26"
+  },
+  {
+    "node": "Breast cancer",
+    "edge": "CASC22"
+  },
+  {
+    "node": "Colon cancer",
+    "edge": "H19"
+  },
+  {
+    "node": "Colon cancer",
+    "edge": "HOTAIR"
+  },
+  {
+    "node": "Colon cancer",
+    "edge": "MALAT1"
+  },
+  {
+    "node": "Colon cancer",
+    "edge": "MEG3"
+  },
+  {
+    "node": "Colon cancer",
+    "edge": "GSEC"
+  },
+  {
+    "node": "Colon cancer",
+    "edge": "CYTOR"
+  },
+  {
+    "node": "Colon cancer",
+    "edge": "TUG1"
+  },
+  {
+    "node": "Colon cancer",
+    "edge": "LINC-ROR"
+  },
+  {
+    "node": "Colon cancer",
+    "edge": "UCA1"
+  },
+  {
+    "node": "Colon cancer",
+    "edge": "FER1L4"
+  },
+  {
+    "node": "Colon cancer",
+    "edge": "CCAT1"
+  },
+  {
+    "node": "Colon cancer",
+    "edge": "CCAT2"
+  },
+  {
+    "node": "Kidney cancer",
+    "edge": "H19"
+  },
+  {
+    "node": "Kidney cancer",
+    "edge": "HOTAIR"
+  },
+  {
+    "node": "Kidney cancer",
+    "edge": "MALAT1"
+  },
+  {
+    "node": "Kidney cancer",
+    "edge": "MEG3"
+  },
+  {
+    "node": "Kidney cancer",
+    "edge": "GSEC"
+  },
+  {
+    "node": "Kidney cancer",
+    "edge": "CYTOR"
+  },
+  {
+    "node": "Kidney cancer",
+    "edge": "TUG1"
+  },
+  {
+    "node": "Kidney cancer",
+    "edge": "LINC-ROR"
+  },
+  {
+    "node": "Kidney cancer",
+    "edge": "UCA1"
+  },
+  {
+    "node": "Endometrial cancer",
+    "edge": "CASC2"
+  },
+  {
+    "node": "Endometrial cancer",
+    "edge": "HOTAIR"
+  },
+  {
+    "node": "Endometrial cancer",
+    "edge": "MALAT1"
+  },
+  {
+    "node": "Endometrial cancer",
+    "edge": "RP11-501O2"
+  },
+  {
+    "node": "Endometrial cancer",
+    "edge": "FAM212B-AS1"
+  },
+  {
+    "node": "Endometrial cancer",
+    "edge": "RP11-140I24"
+  },
+  {
+    "node": "Endometrial cancer",
+    "edge": "NEAT1"
+  },
+  {
+    "node": "Endometrial cancer",
+    "edge": "UCA1"
+  },
+  {
+    "node": "Endometrial cancer",
+    "edge": "MEG3"
+  },
+  {
+    "node": "Endometrial cancer",
+    "edge": "CCAT1"
+  },
+  {
+    "node": "Endometrial cancer",
+    "edge": "FER1L4"
+  },
+  {
+    "node": "Endometrial cancer",
+    "edge": "RP11-395G23.3"
+  },
+  {
+    "node": "Endometrial cancer",
+    "edge": "GAS5"
+  },
+  {
+    "node": "Endometrial cancer",
+    "edge": "SNHG12"
+  },
+  {
+    "node": "Endometrial cancer",
+    "edge": "LINC00582"
+  },
+  {
+    "node": "Endometrial cancer",
+    "edge": "LINC-ROR"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "BCYRN1"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "CBR3-AS1"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "CDKN2B-AS1"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "CASC9"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "H19"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "HOTAIR"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "SOX2-OT"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "SPRY4-IT1"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "AFAP1-AS1"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "MEG3"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "MALAT1"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "UCA1"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "RP11-702B10.1"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "RP11-523H24.3"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "PVT1"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "TDRG1"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "BANCR"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "TUG1"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "LOC100130476"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "TINCR"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "TP73-AS1"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "NEAT1"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "CCAT2"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "HULC"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "BOK-AS1"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "PCAT1"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "FOXCUT"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "LINC01158"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "LINC01233"
+  },
+  {
+    "node": "Esophageal cancer",
+    "edge": "LINC01234"
+  },
+  {
+    "node": "Liver cancer",
+    "edge": "H19"
+  },
+  {
+    "node": "Liver cancer",
+    "edge": "HOTAIR"
+  },
+  {
+    "node": "Liver cancer",
+    "edge": "HULC"
+  },
+  {
+    "node": "Liver cancer",
+    "edge": "MALAT1"
+  },
+  {
+    "node": "Liver cancer",
+    "edge": "UCA1"
+  },
+  {
+    "node": "Liver cancer",
+    "edge": "MT1DP"
+  },
+  {
+    "node": "Liver cancer",
+    "edge": "MIR7-3HG"
+  },
+  {
+    "node": "Gallblader cancer",
+    "edge": "MALAT1"
+  },
+  {
+    "node": "Gallblader cancer",
+    "edge": "LINC-ROR"
+  },
+  {
+    "node": "Gallblader cancer",
+    "edge": "H19"
+  },
+  {
+    "node": "Gallblader cancer",
+    "edge": "CRNDE"
+  },
+  {
+    "node": "Gallblader cancer",
+    "edge": "MINCR"
+  },
+  {
+    "node": "Gallblader cancer",
+    "edge": "MEG3"
+  },
+  {
+    "node": "Gallblader cancer",
+    "edge": "CDKN2B-AS1"
+  },
+  {
+    "node": "Gallblader cancer",
+    "edge": "FAM30A"
+  },
+  {
+    "node": "Gallblader cancer",
+    "edge": "CCAT1"
+  },
+  {
+    "node": "Gallblader cancer",
+    "edge": "HOTAIR"
+  },
+  {
+    "node": "Meningioma",
+    "edge": "H19"
+  },
+  {
+    "node": "Meningioma",
+    "edge": "MEG3"
+  },
+  {
+    "node": "Multiple myeloma",
+    "edge": "MALAT1"
+  },
+  {
+    "node": "Multiple myeloma",
+    "edge": "TP73-AS1"
+  },
+  {
+    "node": "Multiple myeloma",
+    "edge": "MEG3"
+  },
+  {
+    "node": "Multiple myeloma",
+    "edge": "PVT1"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "BCYRN1"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "DNM3OS"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "H19"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "HOTAIR"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "LSINCT5"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "PVT1"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "GAS5"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "UCA1"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "TUG1"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "ASAP1-IT1"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "FAM215A"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "LINC00472"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "NEAT1"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "MALAT1"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "MIR22HG"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "CCAT2"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "CDKN2B-AS1"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "RP4-799P18.3"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "PTPRD-AS1"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "RP11-57P19.1"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "RP11-307C12.11"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "RP11-254I22.1"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "RP11-80H5.7"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "RP1-223E5.4"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "GACAT3"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "BACE1-AS"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "CRNDE"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "XIST"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "CERNA2"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "ZNF300P1"
+  },
+  {
+    "node": "Ovarian cancer",
+    "edge": "OVAAL"
+  },
+  {
+    "node": "Pancreatic cancer",
+    "edge": "HOTAIR"
+  },
+  {
+    "node": "Pancreatic cancer",
+    "edge": "MALAT1"
+  },
+  {
+    "node": "Pancreatic cancer",
+    "edge": "PVT1"
+  },
+  {
+    "node": "Pancreatic cancer",
+    "edge": "HULC"
+  },
+  {
+    "node": "Pancreatic cancer",
+    "edge": "UCA1"
+  },
+  {
+    "node": "Pancreatic cancer",
+    "edge": "CCDC26"
+  },
+  {
+    "node": "Pancreatic cancer",
+    "edge": "IRAIN"
+  },
+  {
+    "node": "Pancreatic cancer",
+    "edge": "LINC00673"
+  },
+  {
+    "node": "Pancreatic cancer",
+    "edge": "LINC-ROR"
+  },
+  {
+    "node": "Pancreatic cancer",
+    "edge": "MEG3"
+  },
+  {
+    "node": "Pancreatic cancer",
+    "edge": "NUTF2P3"
+  },
+  {
+    "node": "Pancreatic cancer",
+    "edge": "RP11-567G11.1"
+  },
+  {
+    "node": "Pancreatic cancer",
+    "edge": "LINC00261"
+  },
+  {
+    "node": "Pancreatic cancer",
+    "edge": "CYTOR"
+  },
+  {
+    "node": "Pancreatic cancer",
+    "edge": "HNF1A-AS1"
+  },
+  {
+    "node": "Pancreatic cancer",
+    "edge": "AFAP1-AS1"
+  },
+  {
+    "node": "Pancreatic cancer",
+    "edge": "H19"
+  },
+  {
+    "node": "Pancreatic cancer",
+    "edge": "GAS5"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "CDKN2B-AS1"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "CBR3-AS1"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "CTBP1-AS"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "GAS5"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "H19"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "IGF2-AS"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "LINC00963"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "MALAT1"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "MEG3"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "PCA3"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "PCAT1"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "PCGEM1"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "PRNCR1"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "PTENP1"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "PVT1"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "SCHLAP1"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "TERC"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "PCAT14"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "HCG11"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "DANCR"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "CCAT2"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "LINC01138"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "SUZ12P1"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "SOCS2-AS1"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "MIAT"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "TUG1"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "CTB-89H12.4"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "HOTAIR"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "PCAT2"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "UCA1"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "SPRY4-IT1"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "TRPM2-AS"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "PCAT5"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "NEAT1"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "ENSG00000261777"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "PCAT29"
+  },
+  {
+    "node": "Prostate cancer",
+    "edge": "PCAT18"
+  },
+  {
+    "node": "Stomach cancer",
+    "edge": "DRAIC"
+  },
+  {
+    "node": "Stomach cancer",
+    "edge": "PCAT29"
+  },
+  {
+    "node": "Thyroid cancer",
+    "edge": "MALAT1"
+  },
+  {
+    "node": "Thyroid cancer",
+    "edge": "CDKN2B-AS1"
+  },
+  {
+    "node": "Thyroid cancer",
+    "edge": "H19"
+  },
+  {
+    "node": "Thyroid cancer",
+    "edge": "FALEC"
+  },
+  {
+    "node": "Thyroid cancer",
+    "edge": "PVT1"
+  },
+  {
+    "node": "Thyroid cancer",
+    "edge": "MEG3"
+  },
+  {
+    "node": "Thyroid cancer",
+    "edge": "PTCSC3"
+  }
+]
